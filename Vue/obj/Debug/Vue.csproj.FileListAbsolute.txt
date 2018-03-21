@@ -1,0 +1,5 @@
+c:\users\88881771\documents\visual studio 2010\Projects\Vue\Vue\bin\Vue.dll
+c:\users\88881771\documents\visual studio 2010\Projects\Vue\Vue\bin\Vue.pdb
+c:\users\88881771\documents\visual studio 2010\Projects\Vue\Vue\obj\Debug\Vue.dll
+c:\users\88881771\documents\visual studio 2010\Projects\Vue\Vue\obj\Debug\Vue.pdb
+C:\Users\88881771\documents\visual studio 2010\Projects\Vue\Vue\obj\Debug\Vue.csprojResolveAssemblyReference.cache

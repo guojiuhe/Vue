@@ -1,0 +1,58 @@
+﻿a
+{
+    text-decoration: none;
+}
+#app div .router-link-active span
+{
+    /* background-color: #ccc; */
+    color: Red;
+}
+.cur
+{
+    background: #ccc;
+    padding: 5px;
+    text-decoration: none;
+}
+#app
+{
+    margin: 20px 40px 0 40px;
+}
+#directives_title
+{
+    padding-top: 8px;
+}
+#directives_title a
+{
+    padding-right: 10px;
+}
+#directives_content button
+{
+    float:left;
+    clear:both;
+}
+#directives_content input
+{
+    float:left;
+    clear:both;
+}
+#directives_content
+{
+    margin-top: 20px;
+    padding: 20px 0 0 20px;
+    border: 1px solid #ccc;
+    height: 400px;
+}
+#directives_content span
+{
+    height:27px;
+    display: inline-block;
+    float:left;
+    clear:both;
+}
+#directives_content a
+{
+    height:27px;
+    display: inline-block;
+    float:left;
+    clear:both;
+}

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Vue的常用指令</title>
+    <link href="Css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="app">
+        <div id="directives_title">
+            <router-link to="/Directives/v_text"><span>v-text</span></router-link>
+            <router-link to="/Directives/v_html"><span>v-html</span></router-link>
+            <router-link to='/Directives/v_on'><span>v-on</span></router-link>
+            <router-link to='/Directives/v_bind'><span>v-bind</span></router-link>
+            <router-link to='/Directives/v_show'><span>v-show</span></router-link>
+            <router-link to='/Directives/v_if'><span>v-if</span></router-link>
+            <router-link to='/Directives/v_for'><span>v-for</span></router-link>
+        </div>
+        <div id="directives_content">
+            <router-view></router-view>
+        </div>
+    </div>
+    <script src="Scripts/vue.js" type="text/javascript"></script>
+    <script src="Scripts/vue-router.js" type="text/javascript"></script>
+    <script src="Scripts/index.js" type="text/javascript"></script>
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Vue</title>
+    <link href="Css/css.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="app">
+        <p>{{ message }}</p>
+        <input v-model="message">
+
+
+
+        <!--<p v-text="message"></p>-->
+        <!--<p v-html="html"></p>-->
+        <!--<p @click="onClick1">{{ message }}</p>-->
+        <!--<p :style="style" :title="message">{{ message }}</p>-->
+        <!--<p v-show="isShow">{{ message }}</p>-->
+        <!--<p v-if="message.length>10">长度大于10</p>
+        <p v-else-if="message.length<10">长度小于10</p>
+        <p v-else>长度等于10</p>-->
+        <ul><li v-for="(item, index) in items"> {{ item.text }}</li></ul>
+        <!--<my-component></my-component>-->
+    </div>
+    <script src="Scripts/vue.js" type="text/javascript"></script>
+    <script src="Scripts/vue-router.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // 组件
+        var myComponent = Vue.extend({ // 定义
+            template: '<p :style="style">自定义组件!</p>',
+            data: function () {
+                return {
+                    style: 'display:block'
+                }
+            }
+        })
+        Vue.component('my-component', myComponent); // 注册
+
+        var otherComponent = Vue.extend({
+            template: '<p>组件中也可以嵌套组件：<my-component></my-component></p>'
+        })
+        Vue.component('other-component', otherComponent);
+
+        // 过滤器
+        Vue.filter("uppercase", function (value) {
+            return value.toUpperCase();
+        });
+
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue!',
+                html: '<font style="color:red;">Hello Vue!</font>',
+                style: {
+                    color: 'red',
+                    fontSize: '20px'
+                },
+                isShow: false,
+                items: [
+                  { text: '北京', value: '1' },
+                  { text: '大连', value: '2' }
+                ]
+            },
+            methods: {     
+               onClick1:function(){
+                    alert(this.message);
+               }
+           }
+        })
+    </script>
+</body>
+</html>
